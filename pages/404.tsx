@@ -1,7 +1,7 @@
 import Link from "next/link";
 import DefaultLayout from "../components/layouts/DefaultLayout";
 import { query } from '.keystone/api'
-import NavBar2 from "./NavBar2";
+
 import { InferGetStaticPropsType } from "next";
 import Head from "next/head";
 

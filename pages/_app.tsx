@@ -29,7 +29,7 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX
 
     //the web vitals for google analytics
     // const handleRouteChange = ( url:URL) => {
-    //       window.gtag(`config`, process.env.NEXT_PUBLIC_GA_ID, {
+    //       window.gtag('config', process.env.NEXT_PUBLIC_GA_ID, {
     //         page_path: url,
     //       });
     //     }

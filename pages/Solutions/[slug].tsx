@@ -8,8 +8,6 @@ import { Lists } from '.keystone/types';
 import DefaultLayout from '../../components/layouts/DefaultLayout';
 import Header from '../../components/layouts/Header';
 
-
-import NavBar2 from "../NavBar2";
 import Head from "next/head";
 import { Key } from 'react';
 
