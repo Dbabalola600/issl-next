@@ -28,11 +28,11 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX
   useEffect(() => {
 
     //the web vitals for google analytics
-    const handleRouteChange = ( url:URL) => {
-          window.gtag('config', process.env.NEXT_PUBLIC_GA_ID, {
-            page_path: url,
-          });
-        }
+    // const handleRouteChange = ( url:URL) => {
+    //       window.gtag(`config`, process.env.NEXT_PUBLIC_GA_ID, {
+    //         page_path: url,
+    //       });
+    //     }
 
     //loading bar
     router.events.on('routeChangeStart', () => NProgress.start());
@@ -40,9 +40,9 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX
     router.events.on('routeChangeError', () => NProgress.done());
 
     //webvital
-    router.events.on('routeChangeComplete', handleRouteChange);
+    // router.events.on('routeChangeComplete', handleRouteChange);
       return () => {
-        router.events.off('routeChangeComplete', handleRouteChange);
+        // router.events.off('routeChangeComplete', handleRouteChange);
       }
   }, []);
 
